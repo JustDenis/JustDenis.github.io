@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0999c4a95.js" crossorigin="anonymous"></script>
+    <title>JustDenis Portfolio</title>
 </head>
+
 <body>
-    <h1>hello world</h1>
+    <!--Header-->
+
+    <main class="main" id="top">
+        <div class="wrapper">
+            <header class="main-header">
+                <div class="main-header-logo">
+                    <div class="main-header-avatar">
+                        <img src="img/avatar_photo.png" alt="">
+                    </div>
+                    <div class="main-header-descr">
+                        <p class="main-header-descr-name">Денис Еськов</p>
+                        <p class="main-header-descr-prof">Разработчик сайтов</p>
+                    </div>
+                </div>
+                <nav class="main-header-nav">
+                    <div class="main-header-nav-items">
+                        <a class="main-header-nav-item hvr-underline-from-center" href="#portfolio">Мои работы</a>
+                        <a class="main-header-nav-item hvr-underline-from-center" href="#contacts">Мои контакты</a>
+                    </div>
+                    <button class="main-header-nav-btn hvr-fade" ><a href="https://t.me/JustDenisss" target="_blank">Написать</a></button>
+                </nav>
+            </header>
+            <section class="greatings">
+                <div class="greatings-titles">
+                    <h1 class="greatings-title">Приветствую на моем сайте - портфолио!</h1>
+                    <h1 class="greatings-descr">Я помогу Вам создать сайт вашей мечты</h1>
+                </div>
+            </section>
+            <section class="down-link">
+                <p class="to-portfolio hvr-hang"><i class="fas fa-angle-double-down"></i> <br> <a href="#portfolio">Посмотреть портфолио</a></p>
+            </section>
+        </div>
+    </main>
+
+    <!--Карточки портфолио-->
+
+    <section class="portfolio" >
+        <div class="wrapper">
+            <h1 class="portfolio-title" id="portfolio">Мои работы</h1>
+            <div class="portfolio-cards">
+                <div class="portfolio-card hvr-grow">
+                    <div class="portfolio-card-img">
+                        <img src="img/Talents.jpg" alt="">
+                    </div>
+                    <div class="portfolio-card-descr">
+                        <p class="portfolio-card-type">Landing page</p>
+                        <div class="portfolio-card-footer">
+                            <p class="portfolio-card-name">Мои таланты</p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site1" target="_blank">Посмотреть</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card hvr-grow">
+                    <div class="portfolio-card-img">
+                        <img src="img/Gipsolit.jpg" alt="">
+                    </div>
+                    <div class="portfolio-card-descr">
+                        <p class="portfolio-card-type">Landing page</p>
+                        <div class="portfolio-card-footer">
+                            <p class="portfolio-card-name">Гипсолит</p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site2" target="_blank">Посмотреть</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card hvr-grow">
+                    <div class="portfolio-card-img">
+                        <img src="img/grey.jpg" alt="">
+                    </div>
+                    <div class="portfolio-card-descr">
+                        <p class="portfolio-card-type">Unknown</p>
+                        <div class="portfolio-card-footer">
+                            <p class="portfolio-card-name">В разработке...</p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site3" target="_blank">Посмотреть</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Связь со мной-->
+
+    <section class="feedback">
+        <div class="wrapper">
+            <h1 class="feedback-title" id="contacts">Мои контакты</h1>
+            <p class="feedback-subtitle">Связаться со мной можно любым удобным для вас способом:</p>
+            <div class="feedback-links">
+                <div class="feedback-social">
+                    <div class="feedback-social-telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Telegram: <a href="https://t.me/JustDenisss" target="_blank">@JustDenisss</a></span>
+                    </div>
+                    <div class="feedback-social-instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram: <a href="https://www.instagram.com/_pup_pop_/" target="_blank">_pup_pop_</a></span>
+                    </div>
+                </div>
+                <div class="feedback-work-social">
+                    <div class="feedback-work-email">
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>E-mail:</strong> eskov27@gmail.com</span>
+                    </div>
+                    <div class="feedback-work-linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn: <a href="https://www.linkedin.com/in/justdenis/">justdenis</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Футер-->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-items">
+                <div class="footer-left-side">
+                    <span class="footer-left-side-item"><a href="#top">Вверх</a></span>
+                    <span class="footer-left-side-item"><a href="#portfolio">Мои работы</a></span>
+                    <span class="footer-left-side-item"><a href="#contacts">Мои контакты</a></span>
+                </div>
+                <div class="footer-right-side">
+                    <button class="footer-right-side-btn" ><a href="https://t.me/JustDenisss" target="_blank">Написать</a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
