@@ -21,7 +21,7 @@
             <header class="main-header">
                 <div class="main-header-logo">
                     <div class="main-header-avatar">
-                        <img src="img/avatar_photo.png" alt="">
+                        <img src="img/logo.svg" alt="">
                     </div>
                     <div class="main-header-descr">
                         <p class="main-header-descr-name">Денис Еськов</p>
@@ -33,9 +33,35 @@
                         <a class="main-header-nav-item hvr-underline-from-center" href="#portfolio">Мои работы</a>
                         <a class="main-header-nav-item hvr-underline-from-center" href="#contacts">Мои контакты</a>
                     </div>
-                    <button class="main-header-nav-btn hvr-fade" ><a href="https://t.me/JustDenisss" target="_blank">Написать</a></button>
+                    <button class="main-header-nav-btn hvr-fade"><a href="https://t.me/JustDenisss"
+                            target="_blank">Написать</a></button>
                 </nav>
             </header>
+            <menu class="burger-menu">
+                <div class="burger-menu-logo">
+                    <img src="img/logo.svg" alt="">
+                    <p><strong>Денис Еськов</strong> <br>
+                        Веб-разработчик
+                    </p>
+
+                </div>
+                <a href="#" class="menuBtn hvr-grow">
+                    <span class="lines"></span>
+                </a>
+                <nav class="mainMenu">
+                    <ul>
+                        <li>
+                            <a href="#portfolio">Портфолио </a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/JustDenisss" target="_blank" class="suBtn">Написать</a>
+                        </li>
+                    </ul>
+                </nav>
+            </menu>
             <section class="greatings">
                 <div class="greatings-titles">
                     <h1 class="greatings-title">Приветствую на моем сайте - портфолио!</h1>
@@ -43,14 +69,15 @@
                 </div>
             </section>
             <section class="down-link">
-                <p class="to-portfolio hvr-hang"><i class="fas fa-angle-double-down"></i> <br> <a href="#portfolio">Посмотреть портфолио</a></p>
+                <p class="to-portfolio hvr-hang"><i class="fas fa-angle-double-down"></i> <br> <a
+                        href="#portfolio">Посмотреть портфолио</a></p>
             </section>
         </div>
     </main>
 
     <!--Карточки портфолио-->
 
-    <section class="portfolio" >
+    <section class="portfolio">
         <div class="wrapper">
             <h1 class="portfolio-title" id="portfolio">Мои работы</h1>
             <div class="portfolio-cards">
@@ -62,7 +89,8 @@
                         <p class="portfolio-card-type">Landing page</p>
                         <div class="portfolio-card-footer">
                             <p class="portfolio-card-name">Мои таланты</p>
-                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site1" target="_blank">Открыть</a></p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site1"
+                                    target="_blank">Открыть</a></p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +102,8 @@
                         <p class="portfolio-card-type">Landing page</p>
                         <div class="portfolio-card-footer">
                             <p class="portfolio-card-name">Гипсолит</p>
-                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site2" target="_blank">Открыть</a></p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site2"
+                                    target="_blank">Открыть</a></p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +115,8 @@
                         <p class="portfolio-card-type">Landing page</p>
                         <div class="portfolio-card-footer">
                             <p class="portfolio-card-name">Эконорма</p>
-                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site3" target="_blank">Открыть</a></p>
+                            <p class="portfolio-card-view"><a href="https://justdenis.github.io/site3"
+                                    target="_blank">Открыть</a></p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +138,8 @@
                     </div>
                     <div class="feedback-social-instagram">
                         <i class="fab fa-instagram"></i>
-                        <span>Instagram: <a href="https://www.instagram.com/_pup_pop_/" target="_blank">_pup_pop_</a></span>
+                        <span>Instagram: <a href="https://www.instagram.com/_pup_pop_/"
+                                target="_blank">_pup_pop_</a></span>
                     </div>
                 </div>
                 <div class="feedback-work-social">
@@ -135,11 +166,29 @@
                     <span class="footer-left-side-item"><a href="#contacts">Мои контакты</a></span>
                 </div>
                 <div class="footer-right-side">
-                    <button class="footer-right-side-btn" ><a href="https://t.me/JustDenisss" target="_blank">Написать</a></button>
+                    <button class="footer-right-side-btn"><a href="https://t.me/JustDenisss"
+                            target="_blank">Написать</a></button>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--Бургер меню-->
+    <script>
+        $(document).ready(function () {
+            // menu click event
+            $('.menuBtn').click(function () {
+                $(this).toggleClass('act');
+                if ($(this).hasClass('act')) {
+                    $('.mainMenu').addClass('act');
+                } else {
+                    $('.mainMenu').removeClass('act');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
