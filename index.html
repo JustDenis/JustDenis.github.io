@@ -5,46 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name='freelancehunt' content='3d2d2b0b779698b' />
-    <link rel="stylesheet" href="css/hover-min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0999c4a95.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>JustDenis Portfolio</title>
 </head>
 
 <body>
-    <!--Header-->
-
-    <main class="main" id="top">
+    <!--Первый экран-->
+    <section class="main-section fadeIn wow" id="top">
         <div class="wrapper">
-            <header class="main-header">
-                <div class="main-header-logo">
-                    <div class="main-header-avatar">
-                        <img src="img/avatar_photo.png" alt="">
-                    </div>
-                    <div class="main-header-descr">
-                        <p class="main-header-descr-name">Денис Еськов</p>
-                        <p class="main-header-descr-prof">Разработчик сайтов</p>
-                    </div>
+            <!--Header-->
+            <div class="header">
+                <div class="header-logo">
+                    <img src="img/logo.svg" alt="Logo">
                 </div>
-                <nav class="main-header-nav">
-                    <div class="main-header-nav-items">
-                        <a class="main-header-nav-item hvr-underline-from-center" href="#portfolio">Мои работы</a>
-                        <a class="main-header-nav-item hvr-underline-from-center" href="#contacts">Мои контакты</a>
-                    </div>
-                    <button class="main-header-nav-btn hvr-fade"><a href="https://t.me/JustDenisss"
-                            target="_blank">Написать</a></button>
-                </nav>
-            </header>
-            <menu class="burger-menu">
+                <div class="header-nav">
+                    <a class="header-nav-item toportfolio" href="#portfolio">Портфолио</a>
+                    <a class="header-nav-item tocontacts" href="#contacts">Контакты</a>
+                </div>
+            </div>
+            <!--/Header-->
+            <!--Burger menu-->
+            <div class="burger-menu">
                 <div class="burger-menu-logo">
-                    <img src="img/avatar_photo.png" alt="">
-                    <p><strong>Денис Еськов</strong> <br>
-                        Разработчик сайтов
-                    </p>
-
+                    <img src="img/logo.svg" alt="">
                 </div>
                 <a href="#" class="menuBtn hvr-grow">
                     <span class="lines"></span>
@@ -52,37 +41,44 @@
                 <nav class="mainMenu">
                     <ul>
                         <li>
-                            <a href="#portfolio">Портфолио </a>
+                            <a href="#portfolio" class="toportfolio close">Портфолио </a>
                         </li>
                         <li>
-                            <a href="#contacts">Контакты</a>
+                            <a href="#contacts" class="tocontacts close">Контакты</a>
                         </li>
-                        <li>
-                            <a href="https://t.me/JustDenisss" target="_blank" class="suBtn">Написать</a>
-                        </li>
+
                     </ul>
                 </nav>
-            </menu>
-            <section class="greatings">
-                <div class="greatings-titles">
-                    <h1 class="greatings-title">Приветствую на моем сайте - портфолио!</h1>
-                    <h1 class="greatings-descr">Я помогу Вам создать сайт вашей мечты</h1>
+            </div>
+            <!--/Burger menu-->
+            <!--About me-->
+            <div class="about fadeIn wow">
+                <div class="about-autor">
+                    <i class="fas fa-grip-lines line"></i>
+                    <p class="about-autor-prof">Веб-разработчик</p>
+                    <i class="fas fa-grip-lines line"></i>
                 </div>
-            </section>
-            <section class="down-link">
-                <p class="to-portfolio hvr-hang"><i class="fas fa-angle-double-down"></i> <br> <a
-                        href="#portfolio">Посмотреть портфолио</a></p>
-            </section>
+                <p class="about-autor-name">Денис Еськов</p>
+                <p class="about-autor-nickname">Just<span>Denis</span></p>
+                <div class="underline"></div>
+                <div class="about-autor-skills">
+                    <p class="about-autor-skills-title">Skills</p>
+                    <div class="about-autor-skills-items">
+                        <p class="about-autor-skills-item"><i class="fab fa-html5 html"></i> HTML5</p>
+                        <p class="about-autor-skills-item center"><i class="fab fa-css3-alt css"></i> CCS3</p>
+                        <p class="about-autor-skills-item"><i class="fab fa-js-square js"></i> JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <!--/About me-->
         </div>
-    </main>
-
-    <!--Карточки портфолио-->
-
+    </section>
+    <!--Portfolio-->
     <section class="portfolio">
         <div class="wrapper">
-            <h1 class="portfolio-title" id="portfolio">Мои работы</h1>
+            <p class="portfolio-title fadeInUp wow" id="portfolio">Портфолио</p>
             <div class="portfolio-cards">
-                <div class="portfolio-card hvr-grow">
+                <div class="portfolio-card hvr-grow fadeIn wow">
                     <div class="portfolio-card-img">
                         <img src="img/Talents.jpg" alt="">
                     </div>
@@ -95,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-card hvr-grow">
+                <div class="portfolio-card hvr-grow fadeIn wow">
                     <div class="portfolio-card-img">
                         <img src="img/Gipsolit.jpg" alt="">
                     </div>
@@ -108,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-card hvr-grow">
+                <div class="portfolio-card hvr-grow fadeIn wow">
                     <div class="portfolio-card-img">
                         <img src="img/econorm.jpg" alt="">
                     </div>
@@ -124,71 +120,36 @@
             </div>
         </div>
     </section>
-
-    <!--Связь со мной-->
-
-    <section class="feedback">
+    <!--/Portfolio-->
+    <!--Contacts-->
+    <section class="contacts">
         <div class="wrapper">
-            <h1 class="feedback-title" id="contacts">Мои контакты</h1>
-            <p class="feedback-subtitle">Связаться со мной можно любым удобным для вас способом:</p>
-            <div class="feedback-links">
-                <div class="feedback-social">
-                    <div class="feedback-social-telegram">
-                        <i class="fab fa-telegram-plane"></i>
-                        <span>Telegram: <a href="https://t.me/JustDenisss" target="_blank">@JustDenisss</a></span>
-                    </div>
-                    <div class="feedback-social-instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram: <a href="https://www.instagram.com/_pup_pop_/"
-                                target="_blank">_pup_pop_</a></span>
-                    </div>
+            <h1 class="contacts-title fadeInUp wow" id="contacts">Контакты</h1>
+            <p class="contacts-subtitle fadeInUp wow">Желаете собственный сайт? Свяжитесь со мной!</p>
+            <div class="contacts-container">
+                <div class="contacts-items">
+                    <p class="contacts-item-type fadeInUp wow">Я в социальных сетях:</p>
+                    <p class="contacts-item fadeInUp wow"><i class="fab fa-telegram-plane"></i> Telegram: <a href="https://t.me/JustDenisss" target="_blank">@JustDenisss</a></p>
+                    <p class="contacts-item fadeInUp wow"> <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/_pup_pop_/" target="_blank">_pup_pop_</a></p>
+                    <p class="contacts-item fadeInUp wow"><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/justdenis/">justdenis</a></p>
+                    <p class="contacts-item fadeInUp wow"><i class="fas fa-envelope"></i> E-Mail: justdenis23@gmail.com</p>
                 </div>
-                <div class="feedback-work-social">
-                    <div class="feedback-work-email">
-                        <i class="fas fa-envelope"></i>
-                        <span><strong>E-mail:</strong> eskov27@gmail.com</span>
-                    </div>
-                    <div class="feedback-work-linkedin">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn: <a href="https://www.linkedin.com/in/justdenis/">justdenis</a></span>
-                    </div>
+                <div class="contacts-freelance">
+                    <p class="contacts-freelance-type fadeInUp wow">Я на фриланс-биржах:</p>
+                    <p class="contacts-freelance-item fadeInUp wow">WebLancer: <a href="https://www.weblancer.net/users/DenisJD/">DenisJD</a></p>
+                    <p class="contacts-freelance-item fadeInUp wow">FreelanceHunt: <a href="https://freelancehunt.com/freelancer/JustDeniss.html ">JustDeniss</a></p>
+                    <p class="contacts-freelance-item fadeInUp wow">Kwork: <a href="https://kwork.ru/user/justdenis">justdenis</a></p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--Футер-->
-    <footer class="footer">
-        <div class="wrapper">
-            <div class="footer-items">
-                <div class="footer-left-side">
-                    <span class="footer-left-side-item"><a href="#top">Вверх</a></span>
-                    <span class="footer-left-side-item"><a href="#portfolio">Мои работы</a></span>
-                    <span class="footer-left-side-item"><a href="#contacts">Мои контакты</a></span>
-                </div>
-                <div class="footer-right-side">
-                    <button class="footer-right-side-btn"><a href="https://t.me/JustDenisss"
-                            target="_blank">Написать</a></button>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <!--/Contacts-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!--Бургер меню-->
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
-        $(document).ready(function () {
-            // menu click event
-            $('.menuBtn').click(function () {
-                $(this).toggleClass('act');
-                if ($(this).hasClass('act')) {
-                    $('.mainMenu').addClass('act');
-                } else {
-                    $('.mainMenu').removeClass('act');
-                }
-            });
-        });
+        new WOW().init();
     </script>
 </body>
 
