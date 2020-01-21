@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0999c4a95.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <!--Первый экран-->
+    <!--Main-->
     <section class="main-section fadeIn wow" id="top">
         <div class="wrapper">
             <!--Header-->
@@ -25,6 +27,7 @@
                     <img src="img/logo.svg" alt="Logo">
                 </div>
                 <div class="header-nav">
+                    <a class="header-nav-item toservices" href="#services">Услуги</a>
                     <a class="header-nav-item toportfolio" href="#portfolio">Портфолио</a>
                     <a class="header-nav-item tocontacts" href="#contacts">Контакты</a>
                 </div>
@@ -41,7 +44,10 @@
                 <nav class="mainMenu">
                     <ul>
                         <li>
-                            <a href="#portfolio" class="toportfolio close">Портфолио </a>
+                            <a href="#services" class="toservices close">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="toportfolio close">Портфолио</a>
                         </li>
                         <li>
                             <a href="#contacts" class="tocontacts close">Контакты</a>
@@ -73,6 +79,30 @@
             <!--/About me-->
         </div>
     </section>
+    <!--/Main-->
+    <!--Services-->
+    <section class="services" id="services">
+        <div class="wrapper">
+            <h1 class="services-title fadeIn wow">Услуги</h1>
+            <div class="services-slider fadeIn wow">
+                <div class="services-slider-item">
+                    <img src="img/services/tools-and-utensils.svg" alt="" class="services-slider-img">
+                    <h1 class="services-slider-name">Вёрстка вашего макета <br>
+                        (PSD to HTML)
+                    </h1>
+                </div>
+                <div class="services-slider-item">
+                    <img src="img/services/responsive.svg" alt="" class="services-slider-img">
+                    <h1 class="services-slider-name">Адаптивная вёрстка</h1>
+                </div>
+                <div class="services-slider-item">
+                    <img src="img/services/coding.svg" alt="" class="services-slider-img">
+                    <h1 class="services-slider-name">Исправление ошибок на сайте</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Services-->
     <!--Portfolio-->
     <section class="portfolio">
         <div class="wrapper">
@@ -129,28 +159,66 @@
             <div class="contacts-container">
                 <div class="contacts-items">
                     <p class="contacts-item-type fadeInUp wow">Я в социальных сетях:</p>
-                    <p class="contacts-item fadeInUp wow"><i class="fab fa-telegram-plane"></i> Telegram: <a href="https://t.me/JustDenisss" target="_blank">@JustDenisss</a></p>
-                    <p class="contacts-item fadeInUp wow"> <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/_pup_pop_/" target="_blank">_pup_pop_</a></p>
-                    <p class="contacts-item fadeInUp wow"><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/justdenis/">justdenis</a></p>
-                    <p class="contacts-item fadeInUp wow"><i class="fas fa-envelope"></i> E-Mail: justdenis23@gmail.com</p>
+                    <p class="contacts-item fadeInUp wow"><i class="fab fa-telegram-plane"></i> Telegram: <a
+                            href="https://t.me/JustDenisss" target="_blank">@JustDenisss</a></p>
+                    <p class="contacts-item fadeInUp wow"> <i class="fab fa-instagram"></i> Instagram: <a
+                            href="https://www.instagram.com/_pup_pop_/" target="_blank">_pup_pop_</a></p>
+                    <p class="contacts-item fadeInUp wow"><i class="fab fa-linkedin"></i> LinkedIn: <a
+                            href="https://www.linkedin.com/in/justdenis/">justdenis</a></p>
+                    <p class="contacts-item fadeInUp wow"><i class="fas fa-envelope"></i> E-Mail: justdenis23@gmail.com
+                    </p>
                 </div>
                 <div class="contacts-freelance">
                     <p class="contacts-freelance-type fadeInUp wow">Я на фриланс-биржах:</p>
-                    <p class="contacts-freelance-item fadeInUp wow">WebLancer: <a href="https://www.weblancer.net/users/DenisJD/">DenisJD</a></p>
-                    <p class="contacts-freelance-item fadeInUp wow">FreelanceHunt: <a href="https://freelancehunt.com/freelancer/JustDeniss.html ">JustDeniss</a></p>
-                    <p class="contacts-freelance-item fadeInUp wow">Kwork: <a href="https://kwork.ru/user/justdenis">justdenis</a></p>
+                    <p class="contacts-freelance-item fadeInUp wow">WebLancer: <a
+                            href="https://www.weblancer.net/users/DenisJD/">DenisJD</a></p>
+                    <p class="contacts-freelance-item fadeInUp wow">FreelanceHunt: <a
+                            href="https://freelancehunt.com/freelancer/JustDeniss.html ">JustDeniss</a></p>
+                    <p class="contacts-freelance-item fadeInUp wow">Kwork: <a
+                            href="https://kwork.ru/user/justdenis">justdenis</a></p>
                 </div>
             </div>
         </div>
     </section>
     <!--/Contacts-->
+    <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script>
+        $(document).ready(function () {
+            $('.services-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 720,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            prevArrow: '<button class="prev"><i class="fas fa-arrow-alt-circle-left"></i></button>',
+                            nextArrow: '<button class="next"><i class="fas fa-arrow-alt-circle-right"></i></button>',
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            prevArrow: '<button class="prev"><i class="fas fa-arrow-alt-circle-left"></i></button>',
+                            nextArrow: '<button class="next"><i class="fas fa-arrow-alt-circle-right"></i></button>',
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
 </body>
 
 </html>

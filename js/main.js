@@ -13,6 +13,7 @@ $(document).ready(function () {
     $('.close').click(function (){
         $('.mainMenu').removeClass('act');
     });
+});
 //Scroll
 $(function () {
     $('.toportfolio').on('click', function (e) {
@@ -30,4 +31,13 @@ $(function () {
         e.preventDefault();
     });
 });
-})
+$(function () {
+    $('.toservices').on('click', function (e) {
+        $('html,body').stop().animate({
+            scrollTop: $('#services').offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+});
+
+
