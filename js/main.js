@@ -39,5 +39,10 @@ $(function () {
         e.preventDefault();
     });
 });
-
-
+//Preloader
+$(window).on('load', function () {
+    $preloader = $('.preloader'),
+      $loader = $preloader.find('.sk-chase');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
